@@ -15,10 +15,14 @@
 
 #define TRIGGER_DURATION      100
 
-static uint32_t trigger_count;
+static uint32_t trigger_count = 3 * TRIGGER_DURATION; // long first ping
 
 static void update_blink(uint32_t msec_time)
 {
+    // Ping every two seconds.
+    if (msec_time % 2000 == 0)
+        trigger_LED_ping();
+
     bool on = gpio_get(GPIOC, GPIO1) ? false : true;
     if (trigger_count) {
         on = true;
