@@ -3,7 +3,7 @@
 #include <math.h>
 
 #define Fs     44100.0          // sample rate: Hz
-#define IVL        5.0         // sec
+#define IVL        0.5         // sec
 #define NCYCLE    20            // cycles
 
 const uint32_t UP_SAMPLES = (uint32_t)(Fs * IVL + 0.5);

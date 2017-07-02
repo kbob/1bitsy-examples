@@ -1,3 +1,5 @@
+#define _GNU_SOURCE 1
+
 #include "console.h"
 
 #include <stdio.h>
