@@ -19,7 +19,7 @@
 
 #include "cdcacm.h"
 #include "systick.h"
-#include "LED-ping.h"
+#include "led-ping.h"
 
 #include <libopencm3/stm32/rcc.h>
 #include <libopencm3/stm32/gpio.h>
