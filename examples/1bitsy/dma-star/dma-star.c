@@ -1310,7 +1310,7 @@ static const mode_settings demo_modes[] = {
     { 0x550000, 0x00ffff, 0x0000ff, draw_filled_fa,  &pb4more, TA_FADE    },
     { 0xffffff, 0x110000, 0x223322, draw_everything, &pb4less, TA_RAINBOW },
 };
-static const size_t mode_count = (&demo_modes)[1] - demo_modes;
+// static const size_t mode_count = (&demo_modes)[1] - demo_modes;
 
 static void init_anim_state(anim_state *a,
                             float radius,

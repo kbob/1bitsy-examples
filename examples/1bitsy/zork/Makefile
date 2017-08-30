@@ -30,7 +30,9 @@ LDSCRIPT := ../stm32f4-1bitsy.ld
 CPPFLAGS += -DALLOW_GDT
 
 include ../Makefile.include
-CPPFLAGS += -Wno-parentheses -Werror -Wno-error=char-subscripts -std=gnu11
+CPPFLAGS += -Wno-parentheses -Wno-array-bounds \
+	    -Werror -Wno-error=char-subscripts \
+	    -std=gnu11
 
 textarray.h: gen-textarray.py dtextc.dat
 	python3.5 gen-textarray.py dtextc.dat > $@
